@@ -1,15 +1,17 @@
 package org.example.mmschulzcustomersupport;
 
+import java.util.Arrays;
+
 public class Attachment {
 
-    private String name;
-    private Byte contents;
+    public static String name;
+    public static byte[] contents;
 
-    public String getName() {
+    public static String getName() {
         return name;
     }
 
-    public Byte getContents() {
+    public static byte[] getContents() {
         return contents;
     }
 
@@ -17,7 +19,14 @@ public class Attachment {
         this.name = name;
     }
 
-    public void setContents(Byte contents) {
+    public void setContents(byte[] contents) {
         this.contents = contents;
+    }
+    @Override
+    public String toString() {
+        return "Attachments{" +
+                "name='" + name + '\'' +
+                ", contents=" + Arrays.toString(contents) +
+                '}';
     }
 }

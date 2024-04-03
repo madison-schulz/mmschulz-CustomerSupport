@@ -4,7 +4,10 @@ public class Ticket {
     private String customerName;
     private String subject;
     private String bodyOfTheTicket;
-    private String attatchents;
+    public String attachments;
+    public boolean hasFile() {
+        return Attachment.getName().length() > 0 && Attachment.getContents().length > 0;
+    }
 
     public Ticket() {
         super();
@@ -14,7 +17,7 @@ public class Ticket {
         this.customerName = customerName;
         this.subject = subject;
         this.bodyOfTheTicket = bodyOfTheTicket;
-        this.attatchents = attatchents;
+        this.attachments = attatchents;
     }
 
     public String getCustomerName() {
@@ -29,8 +32,8 @@ public class Ticket {
         return bodyOfTheTicket;
     }
 
-    public String getAttatchents() {
-        return attatchents;
+    public String getAttachments() {
+        return attachments;
     }
 
     public void setCustomerName(String customerName) {
@@ -46,6 +49,18 @@ public class Ticket {
     }
 
     public void setAttatchents(String attatchents) {
-        this.attatchents = attatchents;
+        this.attachments = attatchents;
+    }
+
+    public void addAttachment(Attachment attachments) {
+    }
+    @Override
+    public String toString() {
+        return "Ticket{" +
+                "customerName='" + customerName + '\'' +
+                ", subject=" + subject +
+                ", bodyOfTheTicket='" + bodyOfTheTicket + '\'' +
+                ", attachments=" + attachments +
+                '}';
     }
 }
