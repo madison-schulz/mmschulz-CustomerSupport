@@ -9,21 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5013f8e7-64a8-4301-b2ba-082ba55262e5" name="Changes" comment="completed TicketServlet">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/Attachment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/Attachment.java" afterDir="false" />
+    <list default="true" id="5013f8e7-64a8-4301-b2ba-082ba55262e5" name="Changes" comment="completed jsp listTickets file">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/TicketServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/TicketServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/base.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/base.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/listTickets.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/listTickets.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/viewTicket.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/viewTicket.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +30,7 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -151,7 +147,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712011769696</updated>
       <workItem from="1712011771769" duration="22406000" />
-      <workItem from="1712110612964" duration="3628000" />
+      <workItem from="1712110612964" duration="17189000" />
     </task>
     <task id="LOCAL-00001" summary="updated index file">
       <option name="closed" value="true" />
@@ -169,7 +165,47 @@
       <option name="project" value="LOCAL" />
       <updated>1712114174796</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="completed jsp error file">
+      <option name="closed" value="true" />
+      <created>1712621964374</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712621964374</updated>
+    </task>
+    <task id="LOCAL-00004" summary="completed jsp base file">
+      <option name="closed" value="true" />
+      <created>1712621978335</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712621978335</updated>
+    </task>
+    <task id="LOCAL-00005" summary="completed jsp viewTickets file">
+      <option name="closed" value="true" />
+      <created>1712622006722</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712622006722</updated>
+    </task>
+    <task id="LOCAL-00006" summary="completed jsp ticketForm file">
+      <option name="closed" value="true" />
+      <created>1712622026741</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712622026741</updated>
+    </task>
+    <task id="LOCAL-00007" summary="completed jsp listTickets file">
+      <option name="closed" value="true" />
+      <created>1712622043908</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712622043908</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +229,11 @@
     <MESSAGE value="created TicketTest" />
     <MESSAGE value="updated index file" />
     <MESSAGE value="completed TicketServlet" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed TicketServlet" />
+    <MESSAGE value="completed jsp error file" />
+    <MESSAGE value="completed jsp base file" />
+    <MESSAGE value="completed jsp viewTickets file" />
+    <MESSAGE value="completed jsp ticketForm file" />
+    <MESSAGE value="completed jsp listTickets file" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed jsp listTickets file" />
   </component>
 </project>
