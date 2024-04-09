@@ -1,21 +1,20 @@
-<%
-    String ticketId = (String)request.getAttribute("ticketID");
-    Ticket ticket = (Ticket)request.getAttribute("ticket");
-%>
-
 <html>
 <head>
-    <title>Ticket <%=ticketId%></title>
+    <title>Ticket #<c:out value="${ticketId}"/></title>
 </head>
 <body>
-    <h2>Ticket</h2>
-    <h3>Ticket: <%=ticket.getCustomerName()%></h3>
-    <p>Subject: <%=ticket.getSubject()%></p>
-    <p><%=ticket.getBodyOfTheTicket()%></p>
-    <%if (ticket.hasFile()) {%>
-    <a href="ticket?action=download&ticketId=<%=ticketId%>&attachments=<%=ticket.getAttachments()%>">
-        <%=ticket.getAttachments()%></a>
-    <%}%>
-    <br><a href="ticket">Return to Ticket list</a>
+<h2>Ticket</h2>
+<h3>Ticket #<c:out value="${ticketId}"/>: <c:out value="${ticket.customerName}"/></h3>
+<p>Subject: <c:out value="${ticket.subject}"/></p>
+<p><c:out value="${ticket.bodyOfTheTicket}"/></p>
+<c:if test="${ticket.hasFile()}">
+    <a href="<c:url value='/ticket' >
+            <c:param name='action' value='download' />
+            <c:param name='ticketId' value='${ticketId}' />
+            <c:param name='attachment' value='${ticket.attachments.name}'/>
+        </c:url>"><c:out value="${ticket.attachments.name}"/></a>
+</c:if>
+<br><a href="ticket">Return to ticket list</a>
+
 </body>
 </html>
