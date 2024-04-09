@@ -20,9 +20,7 @@ public class Ticket {
         this.attachments = attatchents;
     }
 
-    public String getCustomerName() {
-        return customerName;
-    }
+
 
     public String getSubject() {
         return subject;
@@ -34,6 +32,9 @@ public class Ticket {
 
     public String getAttachments() {
         return attachments;
+    }
+    public String getCustomerName() {
+        return customerName;
     }
 
     public void setCustomerName(String customerName) {
