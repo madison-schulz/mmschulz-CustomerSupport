@@ -1,4 +1,4 @@
-package org.example.mmschulzcustomersupport;
+package org.example.mmschulzcustomersupport.site;
 
 import jakarta.servlet.http.HttpSession;
 

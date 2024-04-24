@@ -1,11 +1,11 @@
-package org.example.mmschulzcustomersupport;
+package org.example.mmschulzcustomersupport.site;
 
 import java.util.Arrays;
 
 public class Attachment {
 
-    public static String name;
-    public static byte[] contents;
+    private static String name;
+    private static byte[] contents;
 
     public static String getName() {
         return name;

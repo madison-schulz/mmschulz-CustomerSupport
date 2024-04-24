@@ -1,23 +1,24 @@
-package org.example.mmschulzcustomersupport;
+package org.example.mmschulzcustomersupport.site;
+
 
 public class Ticket {
     private String customerName;
     private String subject;
     private String bodyOfTheTicket;
-    public String attachments;
+    private Attachment attachment;
     public boolean hasFile() {
-        return Attachment.getName().length() > 0 && Attachment.getContents().length > 0;
+        return attachment != null && attachment.getName().length() > 0 && attachment.getContents().length > 0;
     }
 
     public Ticket() {
         super();
     }
 
-    public Ticket(String customerName, String subject, String bodyOfTheTicket, String attatchents) {
+    public Ticket(String customerName, String subject, String bodyOfTheTicket, Attachment attachment) {
         this.customerName = customerName;
         this.subject = subject;
         this.bodyOfTheTicket = bodyOfTheTicket;
-        this.attachments = attatchents;
+        this.attachment = attachment;
     }
 
 
@@ -30,8 +31,8 @@ public class Ticket {
         return bodyOfTheTicket;
     }
 
-    public String getAttachments() {
-        return attachments;
+    public Attachment getAttachment() {
+        return attachment;
     }
     public String getCustomerName() {
         return customerName;
@@ -49,8 +50,8 @@ public class Ticket {
         this.bodyOfTheTicket = bodyOfTheTicket;
     }
 
-    public void setAttatchents(String attatchents) {
-        this.attachments = attatchents;
+    public void setAttachment(Attachment attachment) {
+        this.attachment = attachment;
     }
 
     public void addAttachment(Attachment attachments) {
@@ -61,7 +62,7 @@ public class Ticket {
                 "customerName='" + customerName + '\'' +
                 ", subject=" + subject +
                 ", bodyOfTheTicket='" + bodyOfTheTicket + '\'' +
-                ", attachments=" + attachments +
+                ", attachment=" + attachment +
                 '}';
     }
 }

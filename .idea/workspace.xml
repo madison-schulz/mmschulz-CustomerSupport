@@ -9,17 +9,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5013f8e7-64a8-4301-b2ba-082ba55262e5" name="Changes" comment="updated to add logout">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/AuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/SessionListServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/SessionListUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/SessionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/sessions.jsp" afterDir="false" />
+    <list default="true" id="5013f8e7-64a8-4301-b2ba-082ba55262e5" name="Changes" comment="updated">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/config/Bootstrap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/config/RootContextConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/config/ServletContextConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/site/AuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/site/DownloadView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/site/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/site/SessionListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/site/TicketController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/TicketServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/TicketServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/Attachment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/site/Attachment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/site/AuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/LoginServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/SessionListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/SessionListServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/SessionListUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/site/SessionListUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/SessionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/site/SessionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/site/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mmschulzcustomersupport/TicketServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/base.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/base.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/listTickets.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/listTickets.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/sessions.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/sessions.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/ticketForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/ticketForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/viewTicket.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/view/viewTicket.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/mmschulzcustomersupport/AttachmentTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/mmschulzcustomersupport/TicketTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +70,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -81,6 +102,14 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.mmschulzcustomersupport.site" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.mmschulzcustomersupport.site" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Tomcat 10.1.192" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.192" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
@@ -151,7 +180,8 @@
       <workItem from="1712110612964" duration="17465000" />
       <workItem from="1712630198887" duration="624000" />
       <workItem from="1712883706179" duration="3863000" />
-      <workItem from="1713305587657" duration="5523000" />
+      <workItem from="1713305587657" duration="5756000" />
+      <workItem from="1713798798866" duration="19816000" />
     </task>
     <task id="LOCAL-00001" summary="updated index file">
       <option name="closed" value="true" />
@@ -297,7 +327,63 @@
       <option name="project" value="LOCAL" />
       <updated>1712887531929</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="updated">
+      <option name="closed" value="true" />
+      <created>1713315726597</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1713315726597</updated>
+    </task>
+    <task id="LOCAL-00020" summary="created SessionListUtil">
+      <option name="closed" value="true" />
+      <created>1713315761566</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1713315761566</updated>
+    </task>
+    <task id="LOCAL-00021" summary="created">
+      <option name="closed" value="true" />
+      <created>1713315781031</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1713315781031</updated>
+    </task>
+    <task id="LOCAL-00022" summary="updated">
+      <option name="closed" value="true" />
+      <created>1713315789630</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1713315789630</updated>
+    </task>
+    <task id="LOCAL-00023" summary="created">
+      <option name="closed" value="true" />
+      <created>1713315797588</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1713315797588</updated>
+    </task>
+    <task id="LOCAL-00024" summary="updated">
+      <option name="closed" value="true" />
+      <created>1713315805991</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1713315805991</updated>
+    </task>
+    <task id="LOCAL-00025" summary="updated">
+      <option name="closed" value="true" />
+      <created>1713315811687</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1713315811687</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,6 +421,9 @@
     <MESSAGE value="updated Ticket" />
     <MESSAGE value="created login JSP file" />
     <MESSAGE value="updated to add logout" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated to add logout" />
+    <MESSAGE value="created SessionListUtil" />
+    <MESSAGE value="created" />
+    <MESSAGE value="updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated" />
   </component>
 </project>

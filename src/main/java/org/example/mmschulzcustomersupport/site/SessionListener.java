@@ -1,7 +1,6 @@
-package org.example.mmschulzcustomersupport;
+package org.example.mmschulzcustomersupport.site;
 
 import jakarta.servlet.annotation.WebListener;
-import jakarta.servlet.http.HttpSession;
 import jakarta.servlet.http.HttpSessionEvent;
 import jakarta.servlet.http.HttpSessionIdListener;
 import jakarta.servlet.http.HttpSessionListener;
