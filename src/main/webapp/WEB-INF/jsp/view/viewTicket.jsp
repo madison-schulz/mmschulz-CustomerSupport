@@ -9,8 +9,8 @@
 <p>Subject: <c:out value="${ticket.subject}"/></p>
 <p><c:out value="${ticket.bodyOfTheTicket}"/></p>
 <c:if test="${ticket.hasFile()}">
-    <a href="<c:url value='/ticket/${ticketId}/attachment/${ticket.attachments.name}' />">
-        <c:out value="${ticket.attachments.name}"/></a>
+    <a href="<c:url value='/ticket/${ticketId}/attachment/${ticket.attachment.name}' />">
+        <c:out value="${ticket.attachment.name}"/></a>
 </c:if>
 <br><a href="<c:url value='/ticket/list'/>">Return to ticket list</a>
 

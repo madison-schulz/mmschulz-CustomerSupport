@@ -1,7 +1,10 @@
 package org.example.mmschulzcustomersupport.site;
 
 
+import org.example.mmschulzcustomersupport.entities.Attachment;
+
 public class Ticket {
+    private long id;
     private String customerName;
     private String subject;
     private String bodyOfTheTicket;
@@ -14,14 +17,13 @@ public class Ticket {
         super();
     }
 
-    public Ticket(String customerName, String subject, String bodyOfTheTicket, Attachment attachment) {
-        this.customerName = customerName;
-        this.subject = subject;
-        this.bodyOfTheTicket = bodyOfTheTicket;
-        this.attachment = attachment;
+    public long getId() {
+        return id;
     }
 
-
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getSubject() {
         return subject;

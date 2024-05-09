@@ -3,10 +3,13 @@ package org.example.mmschulzcustomersupport.site;
 import jakarta.servlet.*;
 import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequestWrapper;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
+import org.example.mmschulzcustomersupport.entities.UserPrincipal;
 
 import java.io.IOException;
+import java.security.Principal;
 
 @WebFilter(value={"/","/ticket/*", "/sessions"})
 public class AuthenticationFilter implements Filter {
@@ -18,11 +21,17 @@ public class AuthenticationFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpSession session = ((HttpServletRequest)servletRequest).getSession(false);
-        if(session == null || session.getAttribute("username") == null) {
+        final Principal principal = UserPrincipal.getPrincipal(session);
+
+        if(principal == null) {
             ((HttpServletResponse)servletResponse).sendRedirect(((HttpServletRequest)servletRequest).getContextPath() + "/login");
         }
         else {
-            filterChain.doFilter(servletRequest, servletResponse);
+            filterChain.doFilter(new HttpServletRequestWrapper((HttpServletRequest) servletRequest) {
+                @Override
+                public Principal getUserPrincipal() {
+                    return principal;}
+                }, servletResponse);
         }
     }
 

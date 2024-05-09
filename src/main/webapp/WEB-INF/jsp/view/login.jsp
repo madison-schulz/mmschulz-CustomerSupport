@@ -4,7 +4,7 @@
 </head>
 <body>
 <h2>Login</h2>
-You must log in to access the blog website.<br><br>
+You must log in to access the ticket website.<br><br>
 <c:if test="${loginFailed == true}">
     <b><c:out value="The username or password you enteres are not correct, Please try again."></c:out></b><br>
 </c:if>
